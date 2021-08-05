@@ -17,27 +17,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
+    <!-- jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
     <title>Mega One</title>
 
 </head>
 
 <body>
-    <header>
+    <header >
         <div class="container header">
             <h1 class="logo"><a href="#">MegaOne</a></h1>
             <nav class="navbar-nav">
-                <a href="#" class="nav-link nav-active">Home <span></span></a>
-                <a href="#" class="nav-link">Services <span></span></a>
-                <a href="#" class="nav-link">Portfolio <span></span></a>
-                <a href="#" class="nav-link">Pricing <span></span></a>
-                <a href="#" class="nav-link">Reviews <span></span></a>
-                <a href="#" class="nav-link">Contact us <span> </span></a>
+                <a href="#creative" class="nav-link">Home <span></span></a>
+                <a href="#facts" class="nav-link">Services <span></span></a>
+                <a href="#portfolio" class="nav-link">Portfolio <span></span></a>
+                <a href="#pricing" class="nav-link">Pricing <span></span></a>
+                <a href="#review" class="nav-link">Reviews <span></span></a>
+                <a href="#contact" class="nav-link">Contact us <span> </span></a>
             </nav>
+        </div>
+        <div class="menu" id="menu">
+            <a href="#"><i class="fa fa-list" aria-hidden="true"></i></a>
         </div>
     </header>
 
+    <div id="side-menu" class="side-menu">
+        <div class="close" id="close-side-menu"><i class="fa fa-close" aria-hidden="true"></i></div>
+        <div class="side-menu-nav">
+            <div><a href="#" class="side-menu-link">Home <span></span></a></div>
+            <div><a href="#" class="side-menu-link">Services <span></span></a></div>
+            <div><a href="#" class="side-menu-link">Portfolio <span></span></a></div>
+            <div><a href="#" class="side-menu-link">Pricing <span></span></a></div>
+            <div><a href="#" class="side-menu-link">Reviews <span></span></a></div>
+            <div><a href="#" class="side-menu-link">Contact us <span> </span></a></div>
+        </div>
+    </div>
+
     <!-- Creative Studio -->
-    <section class="creative">
+    <section class="creative" id="creative">
         <div class="container">
             <div>
                 <h2>
@@ -52,7 +70,7 @@
     </section>
 
     <!-- Facts -->
-    <section class="facts">
+    <section class="facts" id="facts">
         <div class="container">
             <div class="outline">
                 <div class="col">
@@ -130,7 +148,7 @@
     </section>
 
     <!-- Stats -->
-    <section class="stats">
+    <section class="stats" id="">
         <div class="container">
             <div class="outline">
                 <div class="stats-item">
@@ -173,7 +191,7 @@
     </section>
 
     <!-- Project Info -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="outline">
                 <h2>Innovation through Designs</h2>
@@ -188,7 +206,7 @@
     </section>
 
     <!-- Pricing -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="outline">
                 <p class="display">Our <strong>Pricing</strong></p>
@@ -225,7 +243,7 @@
     </section>
 
     <!-- Rate -->
-    <section class="rate">
+    <section class="rate" id="review">
         <div class="container">
             <div class="outline">
                 <div class="rate-item">
@@ -260,7 +278,7 @@
     </section>
 
     <!-- Form -->
-    <section class="form">
+    <section class="form" id="contact">
         <div class="container">
             <div class="outline">
                 <p class="title">Let's Get In <strong>Touch</strong></p>
@@ -310,6 +328,9 @@
             </div>
         </section>
     </footer>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
